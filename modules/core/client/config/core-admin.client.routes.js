@@ -12,7 +12,7 @@
       .state('admin', {
         abstract: true,
         url: '/admin',
-          template: '<ui-view></ui-view>',
+        template: '<ui-view></ui-view>',
         data: {
           roles: ['admin']
         }

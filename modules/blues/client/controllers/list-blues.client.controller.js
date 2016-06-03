@@ -1,15 +1,15 @@
 (function () {
-    'use strict';
+  'use strict';
 
-    angular
+  angular
         .module('blues')
         .controller('BluesListController', BluesListController);
 
-    BluesListController.$inject = ['BluesService'];
+  BluesListController.$inject = ['BluesService'];
 
-    function BluesListController(BluesService) {
-        var vm = this;
+  function BluesListController(BluesService) {
+    var vm = this;
 
-        vm.blues = BluesService.query();
-    }
+    vm.blues = BluesService.query();
+  }
 }());
